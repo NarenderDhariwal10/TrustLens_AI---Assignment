@@ -4,7 +4,7 @@ import react from "@vitejs/plugin-react";
 /** Dev proxy: must match server PORT (see server/.env). */
 export default defineConfig(({ mode }) => {
   const env = loadEnv(mode, process.cwd(), "");
-  const target = "http://localhost:5001";
+  const target = "https://trustlens-ai-assignment.onrender.com";
 
   const apiProxy = {
     "/api": {
