@@ -100,9 +100,9 @@ Atlas SRV lookup failed (network, firewall, VPN, or wrong URI). For local dev yo
 
 ### 1) API keys
 
-- **Gemini**: [Google AI Studio](https://aistudio.google.com/) — create `GEMINI_API_KEY`.
-- **Tavily**: [Tavily](https://tavily.com/) — create `TAVILY_API_KEY`.
-- **MongoDB (optional)**: [Atlas](https://www.mongodb.com/atlas) connection string.
+- **Gemini**
+- **Tavily**
+- **MongoDB** 
 
 ### 2) Backend
 
@@ -114,7 +114,7 @@ npm install
 npm run dev
 ```
 
-Server listens on `http://localhost:5000`.
+Server listens on `http://localhost:5001`.
 
 ### 3) Frontend
 
@@ -124,7 +124,7 @@ npm install
 npm run dev
 ```
 
-Vite proxies `/api` → `http://localhost:5000` in development.
+Vite proxies `/api` → `http://localhost:5137` in development.
 
 ### 4) Production env
 
@@ -155,21 +155,11 @@ Recent jobs when MongoDB is enabled.
 
 Service metadata and key presence flags.
 
-## Demo video (30s script)
+
 
 1. **0–5s**: Landing — “TruthLens verifies factual claims in PDFs using live web data.”
 2. **5–15s**: Upload a PDF → show extraction + verification animation.
 3. **15–25s**: Zoom truth score, false/inaccurate rows, corrected figures.
 4. **25–30s**: Show deployed Vercel URL + GitHub repo link.
 
-## Screenshots
 
-Add after first deploy:
-
-- Landing hero  
-- Workspace with results + truth meter  
-- Example false/inaccurate cards with sources  
-
-## License
-
-Private / assignment use unless otherwise stated.
